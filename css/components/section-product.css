@@ -22,10 +22,12 @@
 }
 
 .div-product {
-  width: 20vw;
+  width: 20rem;
+  min-height: 390px;
   padding-left: 400px;
   transform: translate(-1%, -87.5%);
   color: var(--white);
+  text-align: justify;
 }
 
 .h1-product {
@@ -39,7 +41,7 @@
 
 .btn-canvas {
   border-radius: 5px;
-  margin-top: 30px;
+  margin-top: 50px;
   padding: 0.5rem 3.5rem;
   color: var(--eirie-black);
   background-color: var(--almond);

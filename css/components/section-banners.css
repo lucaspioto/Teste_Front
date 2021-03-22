@@ -11,8 +11,9 @@
 }
 
 .article-banners {
-  width: 20vw;
+  width: 20rem;
   padding-left: 50px;
+  text-align: justify;
 }
 
 .h1-banners {
