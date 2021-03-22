@@ -1,0 +1,11 @@
+:root {
+  --white: #fff;
+  --cultured: #F6F6F6;
+  --almond: #F5E5D9;;
+  --eirie-black: #272727;
+  --black: #000;
+}
+
+body {
+  background-color: var(--almond);
+}

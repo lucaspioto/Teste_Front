@@ -1,0 +1,8 @@
+.action {
+  display: inline-flex;
+  align-items: center;
+  color: var(--gray1);
+  font-size: 20px;
+  text-decoration: none;
+  margin: 30px 15px;
+}

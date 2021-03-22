@@ -1,0 +1,75 @@
+.section-banners {
+  background-color: var(--black);
+  width: 100%;
+  height: 90vh;
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  border-top: 2px solid white;
+}
+
+.article-banners {
+  width: 20vw;
+  padding-left: 50px;
+}
+
+.h1-banners {
+  margin: 50px 0;
+  font-size: 3rem;
+}
+
+.p-banners {
+  line-height: 1.2rem;
+}
+
+.fig-section-banners {
+  max-width: 300px;
+  background-color: var(--cultured);
+  color: var(--eirie-black);
+  margin-right: 2rem;
+  position: relative;
+  top: 155px;
+  text-align: center;
+  padding-bottom: 20px;
+  line-height: 20px;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 20px;
+  border: white solid 1px;
+}
+
+.-fig-banners-1 {
+  position: absolute;
+  right: 20rem;
+  top: 250px;
+  background-color: var(--cultured);
+}
+
+.img-section-banners-1,
+.img-section-banners-2,
+.img-section-banners-3  {
+  padding-bottom: 15px;
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 18px 18px 0 0;
+  margin-bottom: -10px;
+}
+
+.img-section-banners-2 {
+  height: 200px;
+}
+
+.h1-section-banners {
+  font-weight: bold;
+  line-height: 50px;
+  position: relative;
+}
+
+.all-figures {
+  position: sticky;
+  margin-right: 40px;
+  margin-top: 80px;
+}
+
