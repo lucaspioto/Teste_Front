@@ -1,9 +1,12 @@
 .footer {
+  margin-top: 200px;
   width: 100%;
-  height: 250px;
   border-top: solid 1px var(--eirie-black);
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 1024px) {
+    margin-top: 100px;
+  }
 }
 
 .logo-footer {
@@ -17,7 +20,7 @@
 .div-footer {
   width: 200px;
   height: 100px;
-  margin: 70px 50px 0 50px;
+  margin: 100px 50px 0 50px;
 }
 
 .h1-menu-footer {
@@ -28,6 +31,14 @@
   margin-left: 150px;
   margin-right: 150px;
   width: 500px;
+  @media screen and (max-width: 1024px) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  @media screen and (max-width: 800px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .e-mail {
@@ -36,6 +47,35 @@
   font-size: 0.8rem;
   margin-top: 3.5rem;
   padding-bottom: 10px;
+  border-bottom: var(--eirie-black) 1px solid;
+}
+
+.input-email {
+  background-color: transparent;
+  transform: translate(0, -100%);
+  padding: 9px;
+  width: 70%;
+  border: none;
+  outline: 0;
+  @media screen and (max-width: 800px) {
+    margin-left: 0;
+    margin-right: 0;
+    width: 60%;
+  }
+}
+
+.btn-send {
+  background-color: var(--almond);
+  border: none;
+  cursor: pointer;
+  transform: translate(0, 3px);
+  font-size: 11px;
+  z-index: 3;
+
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px var(--almond) inset;
   border-bottom: var(--eirie-black) 1px solid;
 }
 
@@ -48,16 +88,17 @@
 
 .item-submenu {
   margin-top: 1rem;
+  margin-right: 20px;
 }
 
 .h1-menu-footer-social {
   font-size: 1.4rem;
   text-align: center;
 }
+
 .submenu-social {
   font-size: 0.8rem;
   margin-top: 2.5rem;
-  
 }
 
 .social {
@@ -77,6 +118,7 @@
 
 .span-footer {
   position: absolute;
-  margin-top: 14rem;
+  margin-top: 16rem;
   font-size: 12px;
+  padding: 20px;
 }

@@ -5,16 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/components/reset.css">
-  <link rel="stylesheet" href="./css/components/header.css">
-  <link rel="stylesheet" href="./css/components/action.css">
-  <link rel="stylesheet" href="./css/components/colors.css">
-  <link rel="stylesheet" href="./css/components/section-slider.css">
-  <link rel="stylesheet" href="./css/components/section-images-round.css">
-  <link rel="stylesheet" href="./css/components/section-banners.css">
-  <link rel="stylesheet" href="./css/components/section-product.css">
-  <link rel="stylesheet" href="./css/components/insta-section.css">
-  <link rel="stylesheet" href="./css/components/footer.css">
+  <link rel="stylesheet" href="./dist/css/app.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <title>Fron End - Teste Júnior</title>
 </head>
@@ -22,12 +13,15 @@
 <body>
   <header class="header">
     <a href="#"><img class="logo" src="./img/logo_twitch.png" alt=""></a>
-    <nav>
+    <nav class="menu">
       <a class="action" href="">Menu</a>
       <a class="action" href="">Menu</a>
       <a class="action" href="">Menu</a>
       <a class="action" href="">Menu</a>
       <a class="action" href="">Menu</a>
+    </nav>
+    <nav class="menu-mobile">
+      <a class="action" href="">Menu Mobile</a>
     </nav>
     <ul class="icons">
       <li>
@@ -75,7 +69,7 @@
 
     <article class="article-banners">
       <p class="p-banners">Lorem ipsum dolor sit </p>
-      <h1 class="h1-banners">Lorem ipsum dolor sit amet </h1>
+      <h1 class="h1-banners">Lorem sit ipsum dolor sit amet </h1>
       <p class="p-banners">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsam saepe tempore vel
         dolor! Suscipit a eveniet quia optio dignissimos, non ex, natus labore autem provident error, ad cupiditate
         soluta.</p>
@@ -86,7 +80,7 @@
         <img class="img-section-banners-1" src="https://source.unsplash.com/random/">
         <figcaption>
           <h1 class="h1-section-banners">Titulo 1</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur
+          <p class="p-section-banners">Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempo.</p>
         </figcaption>
       </figure>
@@ -95,7 +89,7 @@
         <img class="img-section-banners-2" src="https://source.unsplash.com/random/">
         <figcaption>
           <h1 class="h1-section-banners">Titulo 2</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur
+          <p class="p-section-banners">Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempo.</p>
         </figcaption>
       </figure>
@@ -104,23 +98,23 @@
         <img class="img-section-banners-3" src="https://source.unsplash.com/random/">
         <figcaption>
           <h1 class="h1-section-banners">Titulo 3</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur
+          <p class="p-section-banners">Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempo.</p>
         </figcaption>
       </figure>
     </div>
   </section>
+  <img class="arrow" src="/img/arrow.png" alt="">
 
   <section class="product-section">
     <div class="canvas">
       <img class="img-canvas" src="https://source.unsplash.com/random/" alt="">
 
-
       <div class="div-product">
         <p class="p-product">Lorem ipsum dolor sit </p>
         <h1 class="h1-product">Lorem ipsum dolor sit amet </h1>
         <p class="p-product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsam saepe tempore vel
-          dolor! Suscipit a eveniet quia optio dignissimos, non ex, natus labore autem provident error, ad cupiditate
+          dolor! Suscipit a eveniet quia dignissimos, non ex, natus labore autem provident error, ad cupiditate
           soluta.</p>
         <button class="btn-canvas">Call-to-action ></button>
       </div>
@@ -140,19 +134,17 @@
       <!-- Add Arrows -->
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-      </div>
     </section>
 
   </section>
 
   <section class="insta-section">
     <h1 class="title-insta">@InstaDaMarca</h1>
-    <div class="div-insta"><img class="img-insta" src="/img/logo_instagram.svg" alt=""></div>
+    <div class="div-insta -insta-1"><img class="img-insta -insta-1" src="/img/logo_instagram.svg" alt=""></div>
     <div class="div-insta -insta-middle">
       <p class="p-insta">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat inventore cumque reiciendis
         deserunt officia reprehenderit, corrupti commodi et, quos accusamus quia mollitia repellendus alias molestias
-        ratione porro facilis? Velit, quidem? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
-        quisquam velit nam fuga facere impedit expedita aperiam dolores?</p>
+        ratione porro facilis? Velit, quidem? </p>
     </div>
     <div class="div-insta"><img class="img-insta" src="/img/logo_instagram.svg" alt=""></div>
   </section>
@@ -177,9 +169,11 @@
     <div class="div-footer -footer-middle">
       <h1 class="h1-menu-footer">MENU</h1>
       <div class="e-mail">
-        <p>E-mail</p>
-        <p>ENVIAR ></p>
+        <span></span>
+        <button class="btn-send">ENVIAR ></button> 
       </div>
+      <label for="email"></label>
+      <input id="email" class="input-email" type="email" placeholder="E-mail">
     </div>
 
     <div class="div-footer">

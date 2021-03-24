@@ -1,0 +1,84 @@
+.product-section {
+  width: 100%;
+  position: sticky;
+  @media screen and (min-width: 1024px) {
+    height: 900px;
+  }
+}
+
+.canvas {
+  position: relative;
+  background-color: var(--eirie-black);
+  border-radius: 0 10px 10px 0;
+  @media screen and (min-width: 1024px) {
+    top: 350px;
+    height: 420px;
+    width: 85%;
+  }
+  @media screen and (max-width: 1024px) {
+    border-radius: 0 10px 10px 0;
+    width: 85%;
+    height: 830px;
+  }
+}
+
+.img-canvas {
+  transform: translate(16%, 14%); //isso
+  width: 250px;
+  height: 330px;
+  object-fit: cover;
+  box-shadow: black 3px 3px 5px;
+  @media screen and (max-width: 1024px) {
+    object-fit: cover;
+    box-shadow: black 3px 3px 5px;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-right: 90%;
+  }
+}
+
+.div-product {
+  width: 17rem;
+  height: 355px;
+  color: var(--white);
+  text-align: left;
+  transform: translate(126%, -82.5%);
+  @media screen and (max-width: 1024px) {
+    margin-left: 10%;
+  }
+}
+
+.h1-product {
+  margin: 30px 0;
+  font-size: 2.3rem;
+}
+
+.p-product {
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+
+.btn-canvas {
+  border-radius: 5px;
+  margin-top: 28px;
+  padding: 0.5rem 3.5rem;
+  color: var(--eirie-black);
+  background-color: var(--almond);
+  border: 0;
+  box-shadow: black 3px 3px 5px;
+}
+
+.-product-slider {
+  margin-right: 50px;
+  margin-top: -5px;
+  left: 62%;
+  width: 440px;
+  height: 290px;
+  border-radius: 10px;
+  @media screen and (max-width: 1024px) {
+    margin-top: -330px;
+    left: 13%;
+    height: 250px;
+    width: 57%;
+  }
+}

@@ -38,6 +38,18 @@ a.action {
   max-height: 25px;
   position: absolute;
   top: 26px;
-  filter: invert();
-}
+  filter: invert(1);
+} 
 
+.menu {
+  display: none;
+  @media screen and (min-width: 1024) {
+    display: block;
+  }
+}
+.menu-mobile {
+  display: block;
+  @media screen and (min-width: 1024) {
+    display: none;
+  }
+}
