@@ -1,11 +1,10 @@
 .section-slide {
-  height: 90vh;
+  height: 95vh;
   overflow: hidden;
   position: sticky;
   z-index: 0;
   border-bottom: 2px solid var(--white);
-  @media screen and (max-width: 1024px) {
-    
+  @media screen and (min-width: 1280px) {
   }
 }
 
@@ -13,7 +12,8 @@ div.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background-color: var(--almond);
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-button-prev:after {
   color: var(--almond);
 }
 
@@ -41,8 +41,3 @@ div.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background-repeat: no-repeat;
   filter: grayscale(80%);
 }
-
-
-
-
-

@@ -1,7 +1,7 @@
 .product-section {
   width: 100%;
   position: sticky;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     height: 900px;
   }
 }
@@ -10,15 +10,24 @@
   position: relative;
   background-color: var(--eirie-black);
   border-radius: 0 10px 10px 0;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     top: 350px;
     height: 420px;
     width: 85%;
   }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1280px) {
     border-radius: 0 10px 10px 0;
     width: 85%;
     height: 830px;
+  }
+  @media screen and (max-width: 1024px) {
+    position: relative;
+    width: 95%;
+  }
+  @media screen and (max-width: 768px) {
+    position: relative;
+    width: 100%;
+    border-radius: 0;
   }
 }
 
@@ -28,7 +37,7 @@
   height: 330px;
   object-fit: cover;
   box-shadow: black 3px 3px 5px;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1280px) {
     object-fit: cover;
     box-shadow: black 3px 3px 5px;
     margin-left: 10%;
@@ -43,7 +52,7 @@
   color: var(--white);
   text-align: left;
   transform: translate(126%, -82.5%);
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1280px) {
     margin-left: 10%;
   }
 }
@@ -71,14 +80,20 @@
 .-product-slider {
   margin-right: 50px;
   margin-top: -5px;
-  left: 62%;
+  left: 70%;
   width: 440px;
   height: 290px;
   border-radius: 10px;
+  @media screen and (max-width: 1280px) {
+    margin-top: -330px;
+    left: 13%;
+    height: 250px;
+    width: 540px;
+  }
   @media screen and (max-width: 1024px) {
     margin-top: -330px;
     left: 13%;
     height: 250px;
-    width: 57%;
+    width: 540px;
   }
 }

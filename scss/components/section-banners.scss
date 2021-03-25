@@ -9,11 +9,14 @@
   border-top: 2px solid white;
   flex-wrap: wrap;
   height: 480px;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1280px) {
     height: 550px;
     margin-bottom: 100px;
   }
-  
+  @media screen and (max-width: 1024px) {
+    height: 1050px;
+    margin-bottom: 100px;
+  }
 }
 
 .article-banners {
@@ -21,11 +24,15 @@
   width: 17rem;
   margin-left: 75px;
   text-align: justify;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1280px) {
     margin-top: 90px;
     width: 17rem;
     margin-left: 15%;
     text-align: justify;
+  }
+  @media screen and (max-width: 1024px) {
+    margin: -50px auto;
+
   }
 }
 
@@ -50,7 +57,7 @@
   margin: 20px auto;
   border: white solid 1px;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     top: 155px;
     margin-right: 2rem;
   }
@@ -58,24 +65,29 @@
 
 .-fig-banners-1 {
   margin-bottom: 50px;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     position: absolute; //isso
     right: 18rem; //isso
     top: 210px; //isso
   }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1280px) {
     width: 17rem;
     margin-left: 55%;
     margin-top: -30%;
   }
-  
+  @media screen and (max-width: 1024px) {
+    margin: 0 auto;
+    margin-bottom: -50px;
+    margin-top: -50px;
+  }
+
   background-color: var(--cultured);
 }
 
 .-fig-banners-3,
 .-fig-banners-2 {
   display: none;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     display: block;
   }
 }
@@ -88,7 +100,7 @@
   object-fit: cover;
   border-radius: 18px 18px 0 0;
   margin-bottom: -10px;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     display: block;
   }
 }
@@ -112,7 +124,7 @@
   position: sticky;
   margin-top: -110px;
   width: 100%;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     margin-right: 40px;
     width: auto;
   }
@@ -123,7 +135,7 @@
   height: 40px;
   margin-left: 90px;
   width: 95px;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1280px) {
     display: none;
   }
 }
