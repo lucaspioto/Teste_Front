@@ -72,3 +72,28 @@ window.addEventListener('load', () => {
 });
 
 
+
+document.querySelector(".toggle-menu").addEventListener("click", function () {
+  document.querySelector("#sidemenu").classList.add('do-show');
+  document.querySelector('body').classList.add('menu-open');
+});
+
+document.querySelector(".toggle-menu.close").addEventListener("click", function () {
+  document.querySelector("#sidemenu").classList.remove('do-show');
+  document.querySelector('body').classList.remove('menu-open');
+});
+
+window.addEventListener('load', () => {
+
+var swiper = new Swiper('.section-slide', {
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'progressbar',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+});
