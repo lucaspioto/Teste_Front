@@ -15,7 +15,7 @@
   }
   @media screen and (max-width: 1024px) {
     height: 1050px;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
   }
 }
 
@@ -32,7 +32,6 @@
   }
   @media screen and (max-width: 1024px) {
     margin: -50px auto;
-
   }
 }
 
@@ -66,7 +65,7 @@
 .-fig-banners-1 {
   margin-bottom: 50px;
   @media screen and (min-width: 1280px) {
-    position: absolute; //isso
+    position: absolute;
     right: 18rem; //isso
     top: 210px; //isso
   }
