@@ -73,11 +73,9 @@
   }
 }
 li:hover {
-  background-color: #fff;
+  background-color: var(--eirie-black);
 }
-.menu-mobile .hiden-menu ul li a:hover {
-  color: #000;
-}
+
 @keyframes menuAnimated {
   from {
     width: 0px;
