@@ -1,11 +1,13 @@
 .menu-mobile {
-  margin-top: 9px;
+  margin-top: 2px;
   margin-right: 15px;
+  line-height: 15px;
   display: none;
   float: right;
   @media screen and (max-width: 768px) {
     display: block;
   }
+
   span {
     height: 3px;
     width: 25px;
@@ -13,6 +15,7 @@
     background: #fff;
     display: block;
   }
+
   @keyframes linkAnimated {
     from {
       opacity: 0;
@@ -21,6 +24,7 @@
       opacity: 1;
     }
   }
+
   .hiden-menu {
     position: absolute;
     height: 100vh;
@@ -29,7 +33,7 @@
     right: 0;
     top: 0;
     position: absolute;
-    z-index: 9999;
+    z-index: 3;
     display: none;
     border-left: 1px #fff solid;
 
@@ -41,7 +45,7 @@
       top: 10px;
       border: 1px solid #fff;
       border-radius: 50%;
-      padding: 5px 6px 3px;
+      padding: 5px 7px 4px;
       animation-duration: 2s;
       animation-name: linkAnimated;
       background-color: #FFF;
@@ -56,6 +60,7 @@
       padding-left: 0;
       li {
         margin-bottom: 10px;
+        padding: 10px 0;
         a {
           color: #fff;
           font-size: 18px;
@@ -67,7 +72,12 @@
     }
   }
 }
-
+li:hover {
+  background-color: #fff;
+}
+.menu-mobile .hiden-menu ul li a:hover {
+  color: #000;
+}
 @keyframes menuAnimated {
   from {
     width: 0px;
@@ -88,6 +98,7 @@
 .do-show {
   display: block !important;
 }
+
 .do-hide {
   display: none !important;
 }

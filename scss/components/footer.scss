@@ -130,4 +130,9 @@ input:-webkit-autofill {
     margin-top: 16rem;
     font-size: 10px;
   }
+  @media (max-width: 640px) {
+    position: absolute;
+    margin-top: 39rem;
+    font-size: 8px;
+  }
 }

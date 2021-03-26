@@ -15,12 +15,13 @@
 }
 
 .title-insta {
-  padding: 30px;
+  padding: 25px 30px;
   background-color: var(--black);
-  color: white;
+  color: var(--almond);
   border-radius: 15px;
   font-size: 35px;
   cursor: pointer;
+  font-family: 'Playfair Display', serif;
   @media screen and (min-width: 1280px) {
     margin-top: -545px;
     position: absolute;
