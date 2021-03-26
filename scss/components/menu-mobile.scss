@@ -1,0 +1,93 @@
+.menu-mobile {
+  margin-top: 9px;
+  margin-right: 15px;
+  display: none;
+  float: right;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+  span {
+    height: 3px;
+    width: 25px;
+    margin-bottom: 5px;
+    background: #fff;
+    display: block;
+  }
+  @keyframes linkAnimated {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .hiden-menu {
+    position: absolute;
+    height: 100vh;
+    width: 1px;
+    background: #fff;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+    border-left: 1px #fff solid;
+
+    .close {
+      display: block;
+      font-size: 16px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      padding: 5px 6px 3px;
+      animation-duration: 2s;
+      animation-name: linkAnimated;
+      background-color: #FFF;
+      color:#000;
+      
+    }
+
+    ul {
+      text-align: center;
+      list-style: none;
+      margin-top: 76px;
+      padding-left: 0;
+      li {
+        margin-bottom: 10px;
+        a {
+          color: #fff;
+          font-size: 18px;
+          text-decoration: none;
+          animation-duration: 2s;
+          animation-name: linkAnimated;
+        }
+      }
+    }
+  }
+}
+
+@keyframes menuAnimated {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 300px;
+  }
+}
+
+#sidemenu {
+  width: 300px;
+  display: none;
+  background-color: #000;
+  animation-name: menuAnimated;
+  animation-duration: 1s;
+}
+
+.do-show {
+  display: block !important;
+}
+.do-hide {
+  display: none !important;
+}

@@ -1,6 +1,7 @@
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--eirie-black);
   color: var(--white);
   position: sticky;
@@ -21,36 +22,26 @@ a.action {
 }
 
 .logo {
-  position: absolute;
-  max-height:70px;
-  left: 2rem;
-  top: 0.4rem;
+  max-height: 70px;
+  margin-left: 15px;
 }
 
 .icons {
   display: flex;
   justify-content: space-around;
   width: 160px;
-  position: absolute;
-  right: 50px;
 }
 
-.icon-1, .icon-2, .icon-3 {
+.icon-1,
+.icon-2,
+.icon-3 {
   max-height: 25px;
-  position: absolute;
-  top: 26px;
   filter: invert(1);
-} 
+}
 
 .menu {
   display: none;
-  @media screen and (min-width: 1024px) {
-    display: block;
-  }
-}
-.menu-mobile {
-  display: none;
-  @media screen and (max-width: 1023px) {
+  @media screen and (min-width: 768px) {
     display: block;
   }
 }
